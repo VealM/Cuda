@@ -9,6 +9,7 @@
 更新后，通过cmd输入以下命令查看  
 *nvidia-smi*  
 应该返回如下信息  
+
 ![avatar](./img_nv/nv.PNG)  
 说明驱动已成功安装  
 
@@ -148,4 +149,5 @@ exe程序强制退出
 查阅到一个解答如下  
 *代码没问题，问题出在windows*
 *解决办法：window登录管理员用户，打开NSIGHT ，设置option的Microsoft display driver 的WDDM TDR enable为False即可，因为该选项导致kernel运行时间超过指定值会中断。*  
-但我没有在VS2015的NSIGHT里找到对应选项...所以按上述方法配置在遇到高并行kernel会错误退出。如果有解决方案也欢迎告诉我~
+但我没有在VS2015的NSIGHT里找到对应选项...所以按上述方法配置在遇到高并行kernel会错误退出。如果有解决方案也欢迎告诉我~  
+
